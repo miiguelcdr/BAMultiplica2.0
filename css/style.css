@@ -2,43 +2,48 @@
     box-sizing:border-box
 }
 
-html{
-    scroll-behavior: smooth;
-}
+
+
 
 header{
-   
-    background-color: rgb(152, 207, 152);
+display: flex;
+background-color: rgb(152, 207, 152);
+width: 200;
+min-height: 70px;
+margin: 3.5;
+padding: 0.2px 0.5px;
+    size-adjust: 5;
  }
 
 header.logo{
-    margin: 0;
-    padding: 20px 30px;
-    size: 2.6;
+    margin: 2.5;
+    padding: 5px 10px;
+    size: 2.5;
 
 
 }
 .logo img{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 
 header.container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: none;
 
 }
 
 header nav{
+    padding-top: -55px;
+    padding: -10px;
     display: flex;
     flex-direction: column;
-   text-align: center;
-    padding-bottom: 50px;
+   text-align: right;
 }
 
 header a{
-    padding: 5px 12px;
+    padding: 10px 12px;
     text-decoration: none;
     font-weight: bold;
     color: black;
@@ -50,10 +55,12 @@ header a{
 header a:hover{
     color: rgb(26, 73, 26);
 }
+
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
 }
+
 h1{font-size: 3em;}
 h2{font-size: 2.7em;}
 h3{font-size: 2em;}
@@ -83,7 +90,7 @@ button{
 
  
 
-#hero{
+#home{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,29 +99,44 @@ button{
     height: 90vh;
     color: white; 
     background-image: url(/img/hero.jpg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
    
 }
 
-#SERVICIOS{
+.enlace{
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+
+}
+
+
+
+#servicios{
     background-color: rgb(30, 30, 30);
     color: white;
     text-align: center;
 }
  
-#SERVICIOS .container{
+#servicios.container{
     padding:150px 12px; 
 }
 
-#SERVICIOS h2{
+#servicios h2{
     margin-top: 0;
     font-size: 3.1em;
 
 }
 
 
-.carta:first-child{
+.items:first-child{
     background-image: url(/img/imgs1.jpg);
     opacity: 20;
     color: black;
@@ -127,7 +149,7 @@ button{
     
 }
  
-.carta:nth-child(2){
+.items:nth-child(2){
     background-image: url(/img/imgs2.jpg);
     opacity: 20;
     color: black;
@@ -138,7 +160,7 @@ button{
     border-radius: 15px;
 }
 
-.carta:nth-child(3){
+.items:nth-child(3){
     background-image: url(/img/imgs3.jpg);
     opacity: 20;
     color: black;
@@ -149,7 +171,7 @@ button{
     border-radius: 15px;
 }
 
-.carta:last-child{
+.items:last-child{
     background-image: url(/img/imgs4.jpg);
     opacity: 20;
     color: black;
@@ -158,7 +180,75 @@ button{
     padding: 50px 0px;
     margin: 30px;
     border-radius: 15px;
+
 }
+ 
+#staff{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+ 
+#staff.container{
+    padding:150px 12px; 
+}
+
+#staff h2{
+    margin-top: 0;
+    font-size: 3.1em;
+}
+
+.info{
+    display: flex;
+    width: auto;
+    align-items: center;
+    text-align: center;
+    background-image: url(/img/formu.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    font-size: 2.1em;
+    margin-bottom: 20px;
+    margin: auto;
+    margin-top: 0;
+    border-radius: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(7, 7, 7);
+
+}
+
+.controls{
+    width: 80%;
+    background:  rgb(26, 73, 26);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(25, 26, 25);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+ .info .botons{
+    width: 25%;
+    opacity: #000;
+    border-radius: 4px;
+    background-color:rgb(26, 73, 26); 
+    border: none;
+    padding: 10px;
+    color: black;
+    margin: 16px 0;
+    font-size: 16px;
+ }
+
+
+
+
+
+
+
+
 
 footer{
     background-color: black;
@@ -177,7 +267,8 @@ footer.container{
 }
 
 .content-foo{
-    margin: 0;
+    display: flex;
+    margin: 10px;
     flex-direction: column;
     text-align: right;
     color: white;
@@ -194,4 +285,4 @@ p{
     padding: 12px;
     text-align: center;
 }
-  
+
